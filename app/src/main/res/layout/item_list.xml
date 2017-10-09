@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyco.roundview.RoundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_4"
+    app:rv_cornerRadius="@dimen/dp_4"
+    app:rv_strokeColor="@android:color/holo_red_light"
+    app:rv_strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingTop="@dimen/dp_4"
+        >
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:text="单号"/>
+
+        <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_num"
+            android:padding="2dp"
+            android:text="复制单号"
+            android:textColor="@color/colorPrimaryDark"
+            app:rv_cornerRadius="2dp"
+            app:rv_strokeColor="@android:color/darker_gray"
+            app:rv_strokeWidth="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kdn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:text="快递鸟查询结果"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tips"
+            android:text="name"/>
+
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:text="跟进"
+            android:textColor="@android:color/holo_green_dark"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kd100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_tips_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+            android:text="快递100查询结果"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_name_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tips_100"
+            tools:text="name"/>
+
+
+        <TextView
+            android:id="@+id/tv_msg_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_100"
+            android:textColor="@android:color/holo_green_dark"
+            tools:text="跟进"/>
+
+    </RelativeLayout>
+
+
+</com.flyco.roundview.RoundLinearLayout>

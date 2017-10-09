@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wifi.www.expresssearch.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@android:color/darker_gray"
+        android:gravity="top|left"
+        android:hint="输入物流单号"
+        android:scrollbarSize="20dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="16dp"/>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="查询快递"
+        android:textColor="@android:color/white"
+        app:rv_backgroundColor="@android:color/holo_red_light"
+        app:rv_cornerRadius="5dp"/>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@+id/rtv_search_02"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="清空"
+        android:textColor="@android:color/white"
+        app:rv_backgroundColor="@android:color/holo_red_light"
+        app:rv_cornerRadius="5dp"/>
+
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/rtv_search_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/rtv_search"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:text="查询重复"
+        android:textColor="@android:color/white"
+        app:rv_backgroundColor="@android:color/holo_red_light"
+        app:rv_cornerRadius="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rtv_search"
+        android:padding="@dimen/dp_10"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>
